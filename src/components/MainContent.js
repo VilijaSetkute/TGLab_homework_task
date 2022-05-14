@@ -1,11 +1,16 @@
 import React from 'react';
-import MarkX from "./icons/MarkX";
-import MarkMenu from "./icons/MarkMenu";
+import Card from './card/Card'
 
 const MainContent = () => {
     return (
         <div className='main'>
-            ...
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
         </div>
     );
 };
