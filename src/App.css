@@ -1,0 +1,171 @@
+.figma-app {
+    background-color: #dadada;
+    font-family: Roboto, sans-serif;
+    min-height: 100vh;
+    max-height: 100%;
+}
+
+/*-----------------------------------------------------*/
+.d-flex {
+    display: flex;
+    flex-direction: row;
+}
+.justify-content {
+    justify-content: center;
+}
+.justify-content-end {
+    justify-content: end;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
+}
+.position-relative {
+    position: relative;
+}
+.position-absolute {
+    position: absolute;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+    .justify-content {
+        justify-content: end;
+    }
+}
+
+/*-----------------------------------------------------*/
+.mark-x {
+    position: relative;
+}
+.mark-x__left {
+    position: absolute;
+    width: 48px;
+    height: 5px;
+    top: 0;
+    right: 10px;
+    background: #C4C4C4;
+    transform: matrix(0.71, 0.74, -0.68, 0.71, 0, 0);
+}
+.mark-x__right {
+    position: absolute;
+    width: 48px;
+    height: 5px;
+    top: 0;
+    right: 10px;
+    background: #C4C4C4;
+    transform: matrix(-0.71, 0.74, -0.68, -0.71, 0, 0);
+}
+
+.mark-menu {
+    height: 60px;
+}
+.mark-menu__top {
+    position: relative;
+    width: 45px;
+    height: 5px;
+    background: #C4C4C4;
+    right: 10px;
+    top: 14px;
+}
+.mark-menu__mid {
+    position: relative;
+    width: 45px;
+    height: 5px;
+    background: #C4C4C4;
+    right: 10px;
+    top: 24px;
+}
+.mark-menu__bot {
+    position: relative;
+    width: 45px;
+    height: 5px;
+    background: #C4C4C4;
+    right: 10px;
+    top: 34px;
+}
+
+/*-----------------------------------------------------*/
+
+.toolbar {
+    background-color: #2d2d2d;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.toolbar-md {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.toolbar-md nav {
+    width: 170px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.toolbar-sm {
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    .toolbar-md {
+        display: none;
+    }
+    .toolbar-sm {
+        display: block;
+    }
+    .toolbar-icon {
+        color: #C4C4C4;
+    }
+    .menu-mobile {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        height: calc(100vh - 60px);
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #444444;
+        color: #FFFFFF;
+    }
+    .menu-mobile nav {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 23px;
+        width: 60vw;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .menu-mobile nav:not(:last-child) {
+        border-bottom: 3px solid #dadada;
+    }
+}
+
+/*-----------------------------------------------------*/
+
+.main {
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
